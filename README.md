@@ -8,12 +8,12 @@ This project demonstrates the configuration of a CICD pipeline for an Angular ap
 ## Prerequisites 
 
 - Jenkins server (remote or on local machine)
-- Docker installed on Jenkins Server.
+- Docker installed on Jenkins Server
 - Jenkins Plugins 
-- Server to deploy. (Could be same Jenkins server) 
-- - Bitbucket
-- - SSH Agent
-- - Docker
+- Server to deploy (Could be same Jenkins server) 
+    - Bitbucket
+    - SSH Agent
+    - Docker
 
 ## Permissions and Credentials Required
 - IAM Role for Jenkins server. (Policies: ECR full access, EC2 full access)
