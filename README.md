@@ -2,6 +2,9 @@
 
 This project demonstrates the configuration of a CICD pipeline for an Angular application using Jenkins. The pipeline processes include building the Docker image, running tests, pushing the image to AWS ECR, and deploying to an EC2 instance.
 
+## Architecture
+![Architecture](./Images/JenkinsARC.png)
+
 ## Prerequisites 
 
 - Jenkins server (remote or on local machine)
@@ -34,13 +37,15 @@ This project demonstrates the configuration of a CICD pipeline for an Angular ap
 
 ## How to use
 
-1. **Setup AWS Credentials:** Replace placeholder values like "your aws account" with your actual AWS account details and other placeholders as needed.
+1. **Setup AWS Credentials:** 
+    - Replace placeholder values like "your aws account" with your actual AWS account details and other placeholders as needed.
 2. **Jenkins Setup:** Ensure Jenkins is set up with necessary plugins and credentials.
     - Ensure Jenkins is set up with necessary plugins and credentials.
     - Configure Jenkins to monitor your repository for any pushes. This can typically be done using webhooks or polling Each time code is pushed to your repository, Jenkins will checkout the latest code and trigger the pipeline.
 3. **Push Changes to Repository:** 
     - Once you're ready to initiate the CICD process, simply push your changes to the repository. Jenkins will detect the push, checkout the code, and run the pipeline stages.
-4. **Verify Deployment:** Once the pipeline completes successfully, access your application on the EC2 instance to verify the updates.
+4. **Verify Deployment:** 
+    - Once the pipeline completes successfully, access your application on the EC2 instance to verify the updates.
 
 ## Useful Links
 - Node.js and npm: Ensure Node.js and npm are installed on your system. You can download them from [Node.js](https://nodejs.org/).
