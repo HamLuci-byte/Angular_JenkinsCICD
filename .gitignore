@@ -1,0 +1,47 @@
+# Angular-related files and directories
+/node_modules
+/dist
+/dist-*
+/dist_*
+/coverage
+.angular/cache
+# IDE and editor files
+/.vscode
+/.idea
+/.vs
+
+# Dependency lock files
+/yarn.lock
+/pnpm-lock.yaml
+
+
+
+# Log files
+*.log
+logs/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.*
+
+# Angular CLI configuration files
+.angular_cli.json
+.angular-cli.json
+.angular.json
+
+# End-to-end test files
+/e2e/*.js
+/e2e/*.ts
+/e2e/*.map
+
+# Angular testing files
+/karma.conf.js
+/protractor.conf.js
+/protractor.conf.ts
+/tsconfig.spec.json
